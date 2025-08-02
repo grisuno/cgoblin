@@ -60,7 +60,7 @@ GOOS=linux go build -o loader_linux main.go loader_linux.go
 
 ```bash
 # Windows
-GOOS=windows go build -o loader_windows.exe main.go loader_windows.go
+GOOS=windows GOARCH=amd64 CGO_ENABLED=1 CC=x86_64-w64-mingw32-gcc go build -o loader_windows.exe
 ```
 
 <img width="654" height="851" alt="image" src="https://github.com/user-attachments/assets/88f85131-f90f-4197-a64a-9b8ad619043f" />
