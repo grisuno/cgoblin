@@ -174,6 +174,20 @@ A dedicated red team focused on offensive security, exploit development, and def
 ## 📄 License
 This project is open-source for educational use. See LICENSE for details (**GPLv3**).
 
+
+# Links
+-    [+] **gomulti_loader** the little brother of **CGOblin**: [https://github.com/grisuno/gomulti_loader](https://github.com/grisuno/gomulti_loader)
+-    [+] Shorts: [https://www.youtube.com/shorts/kPZvVV_RNIE](https://www.youtube.com/shorts/kPZvVV_RNIE)
+-    [+] Deepwiki: [https://deepwiki.com/grisuno/cgoblin](https://deepwiki.com/grisuno/cgoblin)
+-    [+] Github: [https://github.com/grisuno/LazyOwn](https://github.com/grisuno/LazyOwn)
+-    [+] Web: [https://grisuno.github.io/LazyOwn/](https://grisuno.github.io/LazyOwn/)
+-    [+] Reddit: [https://www.reddit.com/r/LazyOwn/](https://www.reddit.com/r/LazyOwn/)
+-    [+] Facebook: [https://web.facebook.com/profile.php?id=61560596232150](https://web.facebook.com/profile.php?id=61560596232150)
+-    [+] HackTheBox: [https://app.hackthebox.com/teams/overview/6429 ](https://app.hackthebox.com/teams/overview/6429 )
+-    [+] Grisun0: [https://app.hackthebox.com/users/1998024](https://app.hackthebox.com/users/1998024)
+-    [+] Patreon: [https://patreon.com/LazyOwn ](https://patreon.com/LazyOwn )
+-    [↙] Download: [https://github.com/grisuno/LazyOwn/archive/refs/tags/release/0.2.47.tar.gz ](https://github.com/grisuno/LazyOwn/archive/refs/tags/release/0.2.47.tar.gz )
+
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white) ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Y8Y2Z73AV)
