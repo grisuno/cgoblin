@@ -140,6 +140,15 @@ python3 -m http.server 8000
 - Platform isolation: Platform-specific code paths prevent cross-contamination
 - CGO safety: Proper memory management in C interface layers
 
+## External Framework Integration
+### Relevant source files
+Purpose and Scope This document covers how **CGOblin** integrates with external exploitation frameworks and automation systems. The integration system allows external tools to automatically configure, build, and execute the shellcode loader with dynamically generated payloads. This capability enables gomulti_loader to function as a component within larger penetration testing suites and automated exploitation frameworks.
+
+For information about the core shellcode loading functionality, see Core Shellcode Loader System. For details about the build system that supports framework integration, see Build System.
+
+### Framework Integration Architecture
+The external framework integration system uses a YAML-based configuration approach that defines how external tools can interact with gomulti_loader. The integration supports parameter-driven payload generation and automated execution workflows.
+
 ## 🛑 Disclaimer
 This tool is intended for:
 
